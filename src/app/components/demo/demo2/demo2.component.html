@@ -1,0 +1,12 @@
+<h3>
+  Demo 2 : Bindings
+</h3>
+<p>Valeur de maProp : {{maProp}}</p>
+<!-- Binding One-Way -->
+
+
+<input type="text" [(ngModel)]="maProp" />
+<!-- Binding Two-Ways -->
+
+<button (click)="modifString()" [disabled]="maProp == 'autre chose'">Click ici</button>
+<!-- Event Bindings (event)="methode()"-->
