@@ -1,4 +1,4 @@
-<ul>
+<!-- <ul>
   <li><a routerLink="home">Home</a></li>
   <li><a routerLink="about">About</a></li>
   <br />
@@ -10,4 +10,19 @@
   <br />
   Exercices
   <li><a routerLink="exo/exo1">Chronomètre</a></li>
+</ul> -->
+
+<ul>
+  <li *ngFor="let lien of navList; let i = index">
+    <a [routerLink]="lien.url"
+       [ngClass]="{category : lien.children}"
+       (click)="switchChildrenVisible(i)">
+      {{lien.title}}
+      </a>
+      <ul *ngIf="lien.children && lien.isChildrenVisible">
+        <li *ngFor="let souslien of lien.children">
+          <a [routerLink]="souslien.url">{{souslien.title}}</a>
+        </li>
+      </ul>
+  </li>
 </ul>

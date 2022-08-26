@@ -14,8 +14,22 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
     this.navList = [
-      { url : 'demo', title : 'demo'}
+      { title : 'home', url : 'home'},
+      { title : 'about', url : 'about'},
+      { title : 'Démos', children : [
+        {title : 'Typescript', url : 'demo/demo1'},
+        {title : 'Bindings', url : 'demo/demo2'},
+        {title : 'Pipes', url : 'demo/demo3'},
+        {title : 'Directives', url : 'demo/demo4'},
+      ]},
+      { title : "Exercices",  children : [
+        {title : 'Chronomètre', url : 'exo/exo1'}
+      ]}
     ]
+  }
+
+  switchChildrenVisible(index : number){
+    this.navList[index].isChildrenVisible = !this.navList[index].isChildrenVisible
   }
 
 }
