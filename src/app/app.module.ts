@@ -13,6 +13,9 @@ import { NavComponent } from './core/components/nav/nav.component';
 import { HeadComponent } from './core/components/head/head.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { EurtobtcPipe } from './components/demo/demo3/eurtobtc.pipe';
+import { ExercicesComponent } from './components/exercices/exercices.component';
+import { Exo1Component } from './components/exercices/exo1/exo1.component';
+import { TotimePipe } from './components/exercices/exo1/totime.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { EurtobtcPipe } from './components/demo/demo3/eurtobtc.pipe';
     NavComponent,
     HeadComponent,
     Demo3Component,
-    EurtobtcPipe
+    EurtobtcPipe,
+    ExercicesComponent,
+    Exo1Component,
+    TotimePipe
   ],
   imports: [
     BrowserModule,

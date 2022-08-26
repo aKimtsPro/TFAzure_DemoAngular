@@ -1,3 +1,5 @@
+import { Exo1Component } from './components/exercices/exo1/exo1.component';
+import { ExercicesComponent } from './components/exercices/exercices.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
@@ -14,6 +16,9 @@ const routes: Routes = [
     { path : 'demo1', component : Demo1Component},
     { path : 'demo2', component : Demo2Component},
     { path : 'demo3', component : Demo3Component},
+  ]},
+  { path : 'exo', component : ExercicesComponent, children : [
+    {path : 'exo1', component : Exo1Component}
   ]}
 ];
 
