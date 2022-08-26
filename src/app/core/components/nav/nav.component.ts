@@ -1,3 +1,4 @@
+import { Link } from './../../models/link.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  navList! : Link[]
+
   constructor() { }
 
   ngOnInit(): void {
+    this.navList = [
+      { url : 'demo', title : 'demo'}
+    ]
   }
 
 }
