@@ -1,0 +1,27 @@
+<h3>Directives (Structural)</h3>
+
+<h4>*ngIf</h4>
+<div style="border : 1px solid black">
+  <p (click)="switchVisible()" style="cursor : pointer;">Click me</p>
+  <div *ngIf="isVisible">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum assumenda cumque obcaecati! Ipsam necessitatibus veritatis molestiae sint rem voluptas hic officia veniam quasi soluta illo commodi, eos voluptate porro iste.
+  </div>
+</div>
+
+<h4>*ngFor</h4>
+<ul>
+  <li *ngFor="let p of maListe; let i = index; let pair = odd"
+      [ngClass]="pair ? 'maClasse' : ''"
+  >
+    {{i}} - {{p}}
+  </li>
+</ul>
+
+<h4>*ngSwitch</h4>
+<input [(ngModel)]="maValeur" />
+<div [ngSwitch]="maValeur">
+  <p *ngSwitchCase="1">{{maListe[0]}}</p>
+  <p *ngSwitchCase="2">{{maListe[1]}}</p>
+  <p *ngSwitchCase="3">{{maListe[2]}}</p>
+  <p *ngSwitchDefault>Tapez 1 2 ou 3</p>
+</div>
