@@ -1,0 +1,27 @@
+<h3>Pipes</h3>
+
+<p>Valeur de monString : {{monString}}</p>
+<p>{{monString | uppercase }}</p>
+<p>{{monString | lowercase }}</p>
+<p>{{monString | titlecase }}</p>
+
+<hr />
+
+<p>Valeur de monNumber : {{monNumber}}</p>
+<p>{{monNumber | number : '1.1-20'}}</p>
+<p>{{monNumber | currency : 'EUR'}}</p>
+<p>{{monNumber | currency : 'USD'}}</p>
+
+<hr />
+
+<p>Valeur de maDate : {{maDate}}</p>
+<p>{{maDate | date : 'dd/MM/yyyy'}}</p>
+<p>{{maDate | date : 'hh:mm:ss'}}</p>
+<p>{{maDate | date : 'yyyy/ mm - ss'}}</p>
+
+<hr />
+<p>{{objet | json | uppercase}}</p>
+<p>{{objet.metier}}</p>
+
+<hr />
+<p>Pipe custom EurToBtc : {{mesEuros | eurtobtc : 2}}</p>

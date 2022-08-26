@@ -9,6 +9,10 @@ import { DemoComponent } from './components/demo/demo.component';
 import { Demo1Component } from './components/demo/demo1/demo1.component';
 import { Demo2Component } from './components/demo/demo2/demo2.component';
 import { FormsModule } from '@angular/forms';
+import { NavComponent } from './core/components/nav/nav.component';
+import { HeadComponent } from './core/components/head/head.component';
+import { Demo3Component } from './components/demo/demo3/demo3.component';
+import { EurtobtcPipe } from './components/demo/demo3/eurtobtc.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     DemoComponent,
     Demo1Component,
-    Demo2Component
+    Demo2Component,
+    NavComponent,
+    HeadComponent,
+    Demo3Component,
+    EurtobtcPipe
   ],
   imports: [
     BrowserModule,

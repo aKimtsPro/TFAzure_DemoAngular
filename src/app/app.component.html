@@ -1,7 +1,11 @@
-<h1>Démo Angular</h1>
-<a routerLink="home">Home</a> | <a routerLink="about">About</a> |
-<a routerLink="demo/demo1">Demo 1 : Typescript</a> |
-<a routerLink="demo/demo2">Demo 2 : Bindings</a> |
-<div style="border : 1px black solid;">
-  <router-outlet></router-outlet>
+<div class="header">
+  <app-head></app-head>
+</div>
+<div class="main">
+  <div class="nav">
+    <app-nav></app-nav>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>
