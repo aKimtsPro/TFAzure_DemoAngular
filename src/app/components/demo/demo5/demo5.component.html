@@ -1,0 +1,15 @@
+<h3>@Input / @Output</h3>
+<p>Composant Parent</p>
+<p>Valeur venant de l'envant : {{valeurVenantDeEnfant}}</p>
+<div style="border : 1px black solid;">
+  <h4>Composant Enfant appelé par sélecteur</h4>
+  <app-enfant [valeurVenantDuParent]="maValeur"
+              (changeValueEvent)="changerMaValeur($event)"
+  >
+    <ul>
+      <li>c#</li>
+      <li>typscript</li>
+      <li>angular</li>
+    </ul>
+  </app-enfant>
+</div>

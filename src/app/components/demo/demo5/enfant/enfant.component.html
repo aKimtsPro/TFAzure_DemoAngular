@@ -1,0 +1,11 @@
+<p>enfant works!</p>
+<p>Valeur venant du parent :  {{valeurVenantDuParent}}</p>
+
+<h4>Demo output</h4>
+<p>
+  <input [(ngModel)]="maProp">
+  <button (click)="startEvent()">Déclencher event</button>
+</p>
+
+<p><b>Contenu html définit dans le parent</b></p>
+<ng-content></ng-content>
