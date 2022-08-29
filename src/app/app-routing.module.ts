@@ -10,6 +10,7 @@ import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { HomeComponent } from './components/home/home.component';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
+import { Exo2Component } from './components/exercices/exo2/exo2.component';
 
 const routes: Routes = [
   { path : 'home', component : HomeComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
     { path : 'demo5', component : Demo5Component},
   ]},
   { path : 'exo', component : ExercicesComponent, children : [
-    {path : 'exo1', component : Exo1Component}
+    {path : 'exo1', component : Exo1Component},
+    {path : 'exo2', component : Exo2Component},
   ]}
 ];
 

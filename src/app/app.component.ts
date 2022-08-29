@@ -20,7 +20,8 @@ export class AppComponent {
       {title : '@Input/@Output', url : 'demo/demo5'},
     ]},
     { title : "Exercices",  children : [
-      {title : 'Chronomètre', url : 'exo/exo1'}
+      {title : 'Chronomètre', url : 'exo/exo1'},
+      {title : 'Shopping List', url : 'exo/exo2'},
     ]}
   ]
 }

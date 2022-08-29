@@ -1,0 +1,11 @@
+<h3>Shopping List</h3>
+<p>
+  Nouvel Article : <input [(ngModel)]="nouvelArticle">
+   &nbsp; <button (click)="ajout()">Ajouter</button>
+</p>
+<div style="border : 2px dashed black">
+  <app-exo2child
+    [liste]="articleListe"
+    (supprimerEvent)="supprimer($event)"
+  ></app-exo2child>
+</div>

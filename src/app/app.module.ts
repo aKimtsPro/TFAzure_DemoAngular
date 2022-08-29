@@ -20,6 +20,8 @@ import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
 import { EnfantComponent } from './components/demo/demo5/enfant/enfant.component';
 import { Demo6Component } from './components/demo/demo6/demo6.component';
+import { Exo2Component } from './components/exercices/exo2/exo2.component';
+import { Exo2childComponent } from './components/exercices/exo2/exo2child/exo2child.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { Demo6Component } from './components/demo/demo6/demo6.component';
     Demo4Component,
     Demo5Component,
     EnfantComponent,
-    Demo6Component
+    Demo6Component,
+    Exo2Component,
+    Exo2childComponent
   ],
   imports: [
     BrowserModule,

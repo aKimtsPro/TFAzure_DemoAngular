@@ -1,0 +1,7 @@
+<h4>Liste de course</h4>
+<ul>
+  <li *ngFor="let a of liste; let i = index;">
+    {{a}} &nbsp;
+    <button (click)="declencheSupprimerEvent(i)">-X-</button>
+  </li>
+</ul>
