@@ -1,1 +1,4 @@
-<p>demo6 works!</p>
+<h3>Service et injection</h3>
+<p>Etat de la connexion : {{demo6IsConnected}}</p>
+<button (click)="connexion()" *ngIf="!demo6IsConnected">Connexion</button>
+<button (click)="deconnexion()" *ngIf="demo6IsConnected">Déconnexion</button>

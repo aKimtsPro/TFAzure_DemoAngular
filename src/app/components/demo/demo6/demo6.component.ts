@@ -1,3 +1,4 @@
+import { FakeauthService } from './services/fakeauth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo6Component implements OnInit {
 
-  constructor() { }
+  demo6IsConnected! : boolean
+
+  constructor(
+    private monService : FakeauthService
+  ) { }
 
   ngOnInit(): void {
+    this.demo6IsConnected = this.monService.isConnected
+  }
+
+  connexion() {
+    this.monService.login()
+    this.demo6IsConnected = this.monService.isConnected
+
+  }
+
+  deconnexion() {
+    this.monService.logout()
+    this.demo6IsConnected = this.monService.isConnected
+
   }
 
 }

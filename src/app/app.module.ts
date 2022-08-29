@@ -1,3 +1,4 @@
+import { FakeauthService } from './components/demo/demo6/services/fakeauth.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

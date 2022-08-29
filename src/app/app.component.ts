@@ -18,6 +18,7 @@ export class AppComponent {
       {title : 'Pipes', url : 'demo/demo3'},
       {title : 'Directives', url : 'demo/demo4'},
       {title : '@Input/@Output', url : 'demo/demo5'},
+      {title : 'Services', url : 'demo/demo6'},
     ]},
     { title : "Exercices",  children : [
       {title : 'Chronomètre', url : 'exo/exo1'},
