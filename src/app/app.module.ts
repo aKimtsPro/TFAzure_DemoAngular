@@ -25,6 +25,9 @@ import { Exo2Component } from './components/exercices/exo2/exo2.component';
 import { Exo2childComponent } from './components/exercices/exo2/exo2child/exo2child.component';
 import { Exo3Component } from './components/exercices/exo3/exo3.component';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
+import { Demo8Component } from './components/demo/demo8/demo8.component';
+import { FourofourComponent } from './core/components/fourofour/fourofour.component';
+import { TargetComponent } from './components/demo/demo8/target/target.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,10 @@ import { Demo7Component } from './components/demo/demo7/demo7.component';
     Exo2Component,
     Exo2childComponent,
     Exo3Component,
-    Demo7Component
+    Demo7Component,
+    Demo8Component,
+    FourofourComponent,
+    TargetComponent
   ],
   imports: [
     BrowserModule,

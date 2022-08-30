@@ -20,6 +20,7 @@ export class AppComponent {
       {title : '@Input/@Output', url : 'demo/demo5'},
       {title : 'Services', url : 'demo/demo6'},
       {title : 'Reactive Forms', url : 'demo/demo7'},
+      {title : 'Routings', url : 'demo/demo8'},
     ]},
     { title : "Exercices",  children : [
       {title : 'Chronomètre', url : 'exo/exo1'},
