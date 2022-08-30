@@ -23,6 +23,7 @@ import { EnfantComponent } from './components/demo/demo5/enfant/enfant.component
 import { Demo6Component } from './components/demo/demo6/demo6.component';
 import { Exo2Component } from './components/exercices/exo2/exo2.component';
 import { Exo2childComponent } from './components/exercices/exo2/exo2child/exo2child.component';
+import { Exo3Component } from './components/exercices/exo3/exo3.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { Exo2childComponent } from './components/exercices/exo2/exo2child/exo2ch
     EnfantComponent,
     Demo6Component,
     Exo2Component,
-    Exo2childComponent
+    Exo2childComponent,
+    Exo3Component
   ],
   imports: [
     BrowserModule,

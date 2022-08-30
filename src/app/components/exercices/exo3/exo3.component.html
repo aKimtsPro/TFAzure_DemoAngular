@@ -1,0 +1,16 @@
+<h3>Liste de course avec Service</h3>
+<p>
+  Nouvel article : <input [(ngModel)]="nouvelArticle">
+   &nbsp; <button (click)="ajout()">Ajouter</button>
+</p>
+
+<div *ngIf="localListeArticle.length > 0" style="border : dashed chartreuse 2px;">
+  <ul>
+    <li *ngFor="let a of localListeArticle; let i = index;">
+      {{a.quantite}} : {{a.nom}}
+      <button (click)="remQty(i)">-</button> &nbsp;
+      <button (click)="addQty(i)">+</button> &nbsp;
+      <button (click)="supprimer(i)">-X-</button>
+    </li>
+  </ul>
+</div>

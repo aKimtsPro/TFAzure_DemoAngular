@@ -23,6 +23,7 @@ export class AppComponent {
     { title : "Exercices",  children : [
       {title : 'Chronomètre', url : 'exo/exo1'},
       {title : 'Shopping List', url : 'exo/exo2'},
+      {title : 'Shopping List ++', url : 'exo/exo3'},
     ]}
   ]
 }
