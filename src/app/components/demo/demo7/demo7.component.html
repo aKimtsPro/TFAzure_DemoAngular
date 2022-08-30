@@ -1,0 +1,20 @@
+<h3>Reactive forms</h3>
+<form [formGroup]="fg" (ngSubmit)="valider()">
+  <p>Prénom : <input type="text" formControlName="prenom"></p>
+  <p style="color: red;"
+     *ngIf="fg.controls['prenom'].invalid && fg.controls['prenom'].touched">
+    Prénom requis avec 3 caractères minimum
+  </p>
+  <p>Email : <input type="email" formControlName="email"></p>
+  <p style="color:red;" *ngIf="fg.controls['email'].errors && fg.controls['email'].invalid">
+    {{fg.controls['email'].errors['myError']}}
+  </p>
+  <p>Date : <input type="date" formControlName="date"></p>
+  <div formArrayName="tel">
+    <button type="button" (click)="ajoutTel()">+</button>
+    <div *ngFor="let t of getTel().controls; let i = index;">
+      <p>Tel : <input type="tel" [formControlName]="i"></p>
+    </div>
+  </div>
+  <button type="submit" [disabled]="fg.invalid">Valider</button>
+</form>
