@@ -1,0 +1,22 @@
+<h2>Liste des produits (total: {{totalPrix | currency:'EUR'}})</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <input type="text" placeholder="nom" formControlName="nom">
+    <input type="number" placeholder="prix" formControlName="prix">
+
+    <button type="submit">ajouter</button>
+
+</form>
+
+<div>
+    <div>
+        <dl *ngFor="let produit of produits">
+            <dt>nom</dt>
+            <dd>{{produit.nom}}</dd>
+            
+            <dt>prix</dt>
+            <dd>{{produit.prix | currency:'EUR'}}</dd>
+        </dl>
+    </div>
+</div>

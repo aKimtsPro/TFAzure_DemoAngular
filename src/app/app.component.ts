@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 import { Link } from './core/models/link.model';
 
 @Component({
@@ -21,6 +22,7 @@ export class AppComponent {
       {title : 'Services', url : 'demo/demo6'},
       {title : 'Reactive Forms', url : 'demo/demo7'},
       {title : 'Routings', url : 'demo/demo8'},
+      {title : 'Observables', url : 'demo/demo9'},
     ]},
     { title : "Exercices",  children : [
       {title : 'Chronomètre', url : 'exo/exo1'},
@@ -28,4 +30,6 @@ export class AppComponent {
       {title : 'Shopping List ++', url : 'exo/exo3'},
     ]}
   ]
+
+  
 }

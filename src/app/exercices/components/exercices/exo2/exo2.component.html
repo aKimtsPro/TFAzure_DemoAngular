@@ -6,6 +6,9 @@
 <div style="border : 2px dashed black">
   <app-exo2child
     [liste]="articleListe"
-    (supprimerEvent)="supprimer($event)"
+    (supprimerEvent)="supprimer($event)" 
+    [obs-click]="$clicked"
   ></app-exo2child>
+
+  <button (click)="onClick()">click</button>
 </div>

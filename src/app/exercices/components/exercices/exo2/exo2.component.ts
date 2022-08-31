@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Component({
   selector: 'app-exo2',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class Exo2Component implements OnInit {
 
   articleListe : string[] = []
+
+  $clicked: Subject<null> = new Subject<null>();
 
   nouvelArticle! : string
 
@@ -23,6 +26,10 @@ export class Exo2Component implements OnInit {
 
   supprimer(index : number){
     this.articleListe.splice(index, 1)
+  }
+
+  onClick(){
+    this.$clicked.next( null );
   }
 
 }

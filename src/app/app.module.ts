@@ -1,4 +1,4 @@
-import { FakeauthService } from './components/demo/demo6/services/fakeauth.service';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,20 +14,19 @@ import { NavComponent } from './core/components/nav/nav.component';
 import { HeadComponent } from './core/components/head/head.component';
 import { Demo3Component } from './components/demo/demo3/demo3.component';
 import { EurtobtcPipe } from './components/demo/demo3/eurtobtc.pipe';
-import { ExercicesComponent } from './components/exercices/exercices.component';
-import { Exo1Component } from './components/exercices/exo1/exo1.component';
-import { TotimePipe } from './components/exercices/exo1/totime.pipe';
+import { Exo1Component } from './exercices/components/exercices/exo1/exo1.component';
+import { TotimePipe } from './exercices/components/exercices/exo1/totime.pipe';
 import { Demo4Component } from './components/demo/demo4/demo4.component';
 import { Demo5Component } from './components/demo/demo5/demo5.component';
 import { EnfantComponent } from './components/demo/demo5/enfant/enfant.component';
 import { Demo6Component } from './components/demo/demo6/demo6.component';
-import { Exo2Component } from './components/exercices/exo2/exo2.component';
-import { Exo2childComponent } from './components/exercices/exo2/exo2child/exo2child.component';
-import { Exo3Component } from './components/exercices/exo3/exo3.component';
+import { Exo2childComponent } from './exercices/components/exercices/exo2/exo2child/exo2child.component';
+import { Exo3Component } from './exercices/components/exercices/exo3/exo3.component';
 import { Demo7Component } from './components/demo/demo7/demo7.component';
 import { Demo8Component } from './components/demo/demo8/demo8.component';
 import { FourofourComponent } from './core/components/fourofour/fourofour.component';
 import { TargetComponent } from './components/demo/demo8/target/target.component';
+import { Demo9Component } from './components/demo/demo9/demo9.component';
 
 @NgModule({
   declarations: [
@@ -41,20 +40,15 @@ import { TargetComponent } from './components/demo/demo8/target/target.component
     HeadComponent,
     Demo3Component,
     EurtobtcPipe,
-    ExercicesComponent,
-    Exo1Component,
-    TotimePipe,
     Demo4Component,
     Demo5Component,
     EnfantComponent,
     Demo6Component,
-    Exo2Component,
-    Exo2childComponent,
-    Exo3Component,
     Demo7Component,
     Demo8Component,
     FourofourComponent,
-    TargetComponent
+    TargetComponent,
+    Demo9Component
   ],
   imports: [
     BrowserModule,
